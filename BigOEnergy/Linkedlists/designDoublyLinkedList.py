@@ -15,6 +15,11 @@ class LinkedList:
         self.head.next = self.tail
         self.tail.prev = self.head
     
+    def insertEnd(self, val):
+        newNode = listNode(val)
+        newNode.next = self.tail
+        newNode.prev = self.tail.prev
+
     def insertFront(self, val):
         newNode = listNode(val)
         newNode.prev = self.head
