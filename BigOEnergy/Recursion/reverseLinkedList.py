@@ -14,4 +14,4 @@ class Solution:
         head.next.next = head
         head.next = None
 
-        return new_head
+        return new_head   
