@@ -4,7 +4,7 @@ def binarySearch(arr, target):
     L,R = 0, len(arr) -1 # while
     
     while L <= R:
-        mid = (L+R)/ 2
+        mid = (L+R)// 2
 
         if target > arr[mid]:
             L = mid + 1 
