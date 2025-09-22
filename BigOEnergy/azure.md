@@ -1,130 +1,89 @@
-Answer Summary
+## Answer Summary
 Below is a summary of your answers.
 
-Question 1 of 50
-Which two attributes are characteristics of the private cloud deployment model? Each correct answer presents a complete solution.
+### Question 1 of 50
+Which two attributes are characteristics of the **private cloud deployment model**? Each correct answer presents a complete solution.
 
-Your Answer
-Hardware must be purchased.
-
-This answer is correct.
-The company has complete control over physical resources and security.
-
-This answer is correct.
 Correct Answer
 Hardware must be purchased.
-
 This answer is correct.
+
 The company has complete control over physical resources and security.
-
 This answer is correct.
+
 In a private cloud, hardware must be purchased for start up and maintenance. In a private cloud, organizations control resources and security. Quick provisioning is a characteristic of the public cloud deployment model. Paying only for what is used is a characteristic of the public cloud deployment model.
 
 Describe cloud computing - Training | Microsoft Learn
 
-Question 2 of 50
+### Question 2 of 50
 Which two characteristics are common advantages of cloud computing? Each correct answer presents a complete solution.
 
 Your Answer
 geo-distribution
-
 This answer is correct.
+
 high availability
-
 This answer is correct.
-Correct Answer
-geo-distribution
 
-This answer is correct.
-high availability
-
-This answer is correct.
 Cloud-based apps can provide a continuous user experience with no apparent downtime, even when things go wrong. You can deploy apps and data to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region. Apps in cloud computing can scale vertically and horizontally. In a public cloud model, you do not get physical access to servers, as they are managed by the cloud provider.
 
-Describe cloud computing - Training | Microsoft Learn
 
-Question 3 of 50
+### Question 3 of 50
 Select the answer that correctly completes the sentence.
 
 Increasing compute capacity for an app by adding RAM or CPUs to a virtual machine is called [answer choice].
 
 Your Answer
 vertical scaling
-
 This answer is correct.
-Correct Answer
-vertical scaling
 
-This answer is correct.
 You scale vertically to increase compute capacity by adding RAM or CPUs to a virtual machine. Scaling horizontally increases compute capacity by adding instances of resources, such as adding virtual machines to the configuration. Disaster recovery keeps data and other assets safe in the event of a disaster. High availability minimizes downtime when things go wrong.
 
-Describe the benefits of using cloud services - Training | Microsoft Learn
 
-Question 4 of 50
+### Question 4 of 50
 Select the answer that correctly completes the sentence.
 
 Increasing compute capacity for an app by adding instances of resources such as virtual machines is called [answer choice].
 
 Your Answer
 horizontal scaling
-
 This answer is correct.
-Correct Answer
-horizontal scaling
 
-This answer is correct.
 Scaling horizontally increases compute capacity by adding instances of resources, such as adding virtual machines to the configuration. You scale vertically by adding RAM or CPUs to a virtual machine. Disaster recovery keeps data and other assets safe in the event of a disaster. High availability minimizes downtime when things go wrong.
 
-Describe the benefits of using cloud services - Training | Microsoft Learn
-
-Question 5 of 50
+### Question 5 of 50
 What are cloud-based backup services, data replication, and geo-distribution features of?
 
 Your Answer
 a disaster recovery plan
 
 This answer is correct.
-Correct Answer
-a disaster recovery plan
 
-This answer is correct.
 Disaster recovery uses services, such as cloud-based backup, data replication, and geo-distribution, to keep data and code safe in the event of a disaster.
 
-Describe the benefits of using cloud services - Training | Microsoft Learn
 
-Question 6 of 50
+### Question 6 of 50
 What is high availability in a public cloud environment dependent on?
 
 Your Answer
 the service-level agreement (SLA) that you choose
 
 This answer is correct.
-Correct Answer
-the service-level agreement (SLA) that you choose
-
-This answer is correct.
 Different services have different SLAs. Sometimes different tiers of the same service will offer different SLAs, which can increase or decrease the promised availability.
 
-Describe the benefits of using cloud services - Training | Microsoft Learn
 
-Question 7 of 50
+### Question 7 of 50
 Select the answer that correctly completes the sentence.
 
 An example of [answer choice] is automatically scaling an application to ensure that the application has the resources needed to meet customer demands.
 
 Your Answer
 elasticity
-
 This answer is correct.
-Correct Answer
-elasticity
 
-This answer is correct.
-Elasticity refers to the ability to scale resources as needed, such as during business hours, to ensure that an application can keep up with demand, and then reducing the available resources during off-peak hours. Agility refers to the ability to deploy new applications and services quickly. High availability refers to the ability to ensure that a service or application remains available in the event of a failure. Geo-distribution makes a service or application available in multiple geographic locations that are typically close to your users.
+**Elasticity** refers to the ability to scale resources as needed, such as during business hours, to ensure that an application can keep up with demand, and then reducing the available resources during off-peak hours. **Agility** refers to the ability to deploy new applications and services quickly. **High availability** refers to the ability to ensure that a service or application remains available in the event of a failure. **Geo-distribution** makes a service or application available in multiple geographic locations that are typically close to your users.
 
-Describe the benefits of using cloud services - Training | Microsoft Learn
-
-Question 8 of 50
+### Question 8 of 50
 Select the answer that correctly completes the sentence.
 
 In cloud computing, [answer choice] allows you to deploy applications to regional datacenters around the world.
@@ -133,294 +92,169 @@ Your Answer
 geo-location
 
 This answer is correct.
-Correct Answer
-geo-location
-
-This answer is correct.
 You can deploy apps and data to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region. This is referred to as geo-distribution.
 
-Describe the benefits of using cloud services - Training | Microsoft Learn
 
-Question 9 of 50
+### Question 9 of 50
 In which two deployment models are customers responsible for managing operating systems that host applications? Each correct answer presents a complete solution.
 
 Your Answer
 infrastructure as a service (IaaS)
-
-This answer is correct.
 on-premises
-
 This answer is correct.
-Correct Answer
-infrastructure as a service (IaaS)
-
-This answer is correct.
-on-premises
 
 This answer is correct.
 Operating systems are managed by customers when using IaaS or an on-premises deployments. The operating systems are not accessible in PaaS and SaaS deployments.
 
-Describe cloud service types - Training | Microsoft Learn
 
-Question 10 of 50
+### Question 10 of 50
 Which type of cloud service model is typically licensed through a monthly or annual subscription?
 
 Your Answer
 software as a service (SaaS)
 
 This answer is correct.
-Correct Answer
-software as a service (SaaS)
+SaaS is software that is centrally hosted and managed for you and your users or customers. Usually, one version of the application is used for all customers, and it is licensed through a monthly or annual subscription. **PaaS** and **IaaS** use a **consumption-based model**, so you only pay for what you use.
 
-This answer is correct.
-SaaS is software that is centrally hosted and managed for you and your users or customers. Usually, one version of the application is used for all customers, and it is licensed through a monthly or annual subscription. PaaS and IaaS use a consumption-based model, so you only pay for what you use.
 
-Describe cloud service types - Training | Microsoft Learn
-
-Question 11 of 50
+### Question 11 of 50
 Your organization is building a custom application.
 
 You need to focus on application development rather than configuration and management of servers.
 
 Which cloud service model should you use?
-
-Your Answer
-infrastructure as a service (IaaS)
-
-This answer is incorrect.
 Correct Answer
 platform as a service (PaaS)
 
-This answer is correct.
 With PaaS, users can focus on application development because the cloud provider handles all the platform management. In SaaS, the cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage, and applications. IaaS is the closest service model to managing physical servers.
 
-Describe cloud service types - Training | Microsoft Learn
 
-Question 12 of 50
+### Question 12 of 50
 Which cloud service model is used by Microsoft Office 365?
 
 Your Answer
 software as a service (SaaS)
 
-This answer is correct.
-Correct Answer
-software as a service (SaaS)
-
-This answer is correct.
 SaaS allows users to connect to and use cloud-based apps over the internet. Common examples are email, calendaring, and Office tools, such as Office 365.
 
-Describe cloud service types - Training | Microsoft Learn
 
-Question 13 of 50
+### Question 13 of 50
 Which cloud service model is used by Azure SQL Database?
 
 Your Answer
 platform as a service (PaaS)
 
-This answer is correct.
-Correct Answer
-platform as a service (PaaS)
-
-This answer is correct.
 Azure SQL Database is a PaaS database engine.
 
-Describe cloud service types - Training | Microsoft Learn
-
-Question 14 of 50
+### Question 14 of 50
 What uses the infrastructure as a service (IaaS) cloud service model?
 
 Your Answer
 Azure virtual machines
 
 This answer is correct.
-Correct Answer
-Azure virtual machines
 
-This answer is correct.
 Azure Virtual Machines is an IaaS offering. The customer is responsible for the configuration of the virtual machine as well as all operating system configurations. Azure App Services and Azure Cosmos DB are PaaS offerings. Microsoft Office 365 is a SaaS offering.
 
-Describe cloud service types - Training | Microsoft Learn
-
-Question 15 of 50
+### Question 15 of 50
 Select the answer that correctly completes the sentence.
 
 [Answer choice] is the logical container used to combine and organize Azure resources.
 
-Your Answer
-Azure Resource Manager (ARM)
-
-This answer is incorrect.
-Correct Answer
 a resource group
 
 This answer is correct.
 Resources are combined into resource groups, which act as a logical container into which Azure resources like web apps, databases, and storage accounts, are deployed and managed.
 
-Describe the core architectural components of Azure - Training | Microsoft Learn
-
-Question 16 of 50
+### Question 16 of 50
 Select the answer that correctly completes the sentence.
 
 In a region pair, a region is paired with another region in the same [answer choice].
 
-Your Answer
-availability zone
-
-This answer is incorrect.
 Correct Answer
 geography
 
-This answer is correct.
 Each Azure region is always paired with another region within the same geography, such as US, Europe, or Asia, at least 300 miles away.
 
-Describe the core architectural components of Azure - Training | Microsoft Learn
-
-Question 17 of 50
+### Question 17 of 50
 Which two components are created in an Azure subscription? Each correct answer presents a complete solution.
 
-Your Answer
-Microsoft Entra user accounts
-
-This answer is incorrect.
-management groups
-
-This answer is incorrect.
 Correct Answer
 resource groups
-
-This answer is correct.
 resources
 
-This answer is correct.
 Resources can only be associated with a single subscription. Subscriptions may be grouped into management groups. An account may be associated with multiple subscriptions.
 
-Describe the core architectural components of Azure - Training | Microsoft Learn
 
-Question 18 of 50
+### Question 18 of 50
 What is an Azure Storage account named storage001 an example of?
 
 Your Answer
 a resource
 
-This answer is correct.
-Correct Answer
-a resource
-
-This answer is correct.
 A resource is a manageable item that is available through Azure. Virtual machines, storage accounts, web apps, databases, and virtual networks are examples of resources.
 
-Describe the core architectural components of Azure - Training | Microsoft Learn
 
-Question 19 of 50
+### Question 19 of 50
 Which resource can you use to manage access, policies, and compliance across multiple subscriptions?
 
-Your Answer
-administrative units
-
-This answer is incorrect.
-Correct Answer
 management groups
 
-This answer is correct.
-Management groups can be used in environments that have multiple subscriptions to streamline the application of governance conditions. Resource groups can be used to organize Azure resources. Administrative units are used to delegate the administration of Microsoft Entra resources, such as users and groups. Accounts are used to provide access to resources
+**Management groups** can be used in environments that have multiple subscriptions to streamline the application of governance conditions. **Resource groups** can be used to organize Azure resources. **Administrative units** are used to delegate the administration of Microsoft Entra resources, such as users and groups. Accounts are used to provide access to resources
 
-Describe the core architectural components of Azure - Training | Microsoft Learn
-
-Question 20 of 50
+### Question 20 of 50
 Select the answer that correctly completes the sentence.
 
 [Answer choice] is the deployment and management service for Azure.
 
-Your Answer
-Azure Resource Manager (ARM)
-
-This answer is correct.
-Correct Answer
 Azure Resource Manager (ARM)
 
 This answer is correct.
 ARM is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in an Azure subscription. You use management features, such as access control, resource locks, and resource tags, to secure and organize resources after deployment.
 
-Describe the core architectural components of Azure - Training | Microsoft Learn
 
-Question 21 of 50
+### Question 21 of 50
 Which Azure resource is a software emulation of a physical computer that includes a virtual processor, memory, storage, and networking resources?
 
-Your Answer
 a virtual machine
 
-This answer is correct.
-Correct Answer
-a virtual machine
-
-This answer is correct.
 Virtual machines are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. Virtual machines host an operating system, and you can install and run software just like on a physical computer.
 
-Describe Azure compute and networking services - Training | Microsoft Learn
-
-Question 22 of 50
+### Question 22 of 50
 What can you use to execute code in a serverless environment?
 
 Your Answer
 Azure Functions
 
-This answer is correct.
-Correct Answer
-Azure Functions
-
-This answer is correct.
 Azure Functions allows you to run code as a service without having to manage the underlying platform or infrastructure. Azure Logic Apps is similar to Azure Functions, but uses predefined workflows instead of developing your own code.
 
-Describe Azure compute and networking services - Training | Microsoft Learn
-
-Question 23 of 50
+### Question 23 of 50
 You need to allow resources on two different Azure virtual networks to communicate with each other.
 
 What should you configure?
 
-Your Answer
-a point-to-site VPN
-
-This answer is incorrect.
 Correct Answer
 peering
 
 This answer is correct.
-You can link virtual networks together by using virtual network peering. Peering enables resources in each virtual network to communicate with each other.
+You can link virtual networks together by using **virtual network peering**. Peering enables resources in **each** virtual network to communicate with each other.
 
-Describe Azure compute and networking services - Training | Microsoft Learn
-
-Question 24 of 50
+### Question 24 of 50
 What can you use to connect Azure resources, such as Azure SQL databases, to an Azure virtual network?
 
 Your Answer
 service endpoints
 
-This answer is correct.
-Correct Answer
-service endpoints
+**Service endpoints** are used to expose Azure services to a virtual network, providing communication between the two. **ExpressRout**e is used to connect an **on-premises** network to Azure. **NSGs** allow you to configure inbound and outbound rules for virtual networks and virtual machines. Peering allows you to connect virtual networks together.
 
-This answer is correct.
-Service endpoints are used to expose Azure services to a virtual network, providing communication between the two. ExpressRoute is used to connect an on-premises network to Azure. NSGs allow you to configure inbound and outbound rules for virtual networks and virtual machines. Peering allows you to connect virtual networks together.
-
-Describe Azure compute and networking services - Training | Microsoft Learn
-
-Question 25 of 50
+### Question 25 of 50
 What can you use to provide Mac and Android users with access to a Windows environment that will run Windows-based applications?
-
-Your Answer
 Azure Virtual Desktop
-
 This answer is correct.
-Correct Answer
-Azure Virtual Desktop
 
-This answer is correct.
 Azure Virtual Desktop is a desktop and application virtualization service that runs in the cloud. It enables your users to use a cloud-hosted version of Windows from any location. Azure Virtual Desktop works across devices such as Windows, Mac, iOS, Android, and Linux. It works with apps that you can use to access Remote Desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
 
-Describe Azure compute and networking services - Training | Microsoft Learn
-
-Question 26 of 50
+### Question 26 of 50
 Which storage service should you use to store thousands of files containing text and images?
 
 Your Answer
