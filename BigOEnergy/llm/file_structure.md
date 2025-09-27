@@ -4,10 +4,6 @@ llm/
 ├── config.py                          # Model settings
 │
 ├── data/
-│   ├── raw/
-│   │   ├── myanimelist_data.json      # Scraped data
-│   │   ├── reddit_recommendations.txt  # Raw text
-│   │   └── manual_qa.txt              # Hand-written pairs
 │   ├── processed/
 │   │   ├── train_conversations.txt     # Ready for training
 │   │   ├── val_conversations.txt       # Validation set

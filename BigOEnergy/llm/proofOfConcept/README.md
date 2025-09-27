@@ -59,6 +59,16 @@ The project is a **work in progress** — I’m tracking versions as I test new 
 
 ---
 
+
+### **v2.1.0 — Traingn my GTPT2s**  
+
+- **Results:**  
+
+- **Takeaway:**  
+ 
+
+---
+
 ## 🔮 Next Steps / Ideas  
 - Try **instruction-tuned models** (e.g. GPT-NeoX, LLaMA-based, T5, FLAN, etc.).  
 - Explore **fine-tuning GPT-2** with a conversational dataset (Q&A / instruction data).  
