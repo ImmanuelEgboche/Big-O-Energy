@@ -93,7 +93,8 @@ Where as float32 is more accurate and stable but using more mem and is slower
 
 apple gpus have limied VRAM compared to dedicated GPUS so flaot16 helps fit into larger models memeory
 
-
+return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: MPS backend out of memory (MPS allocated: 16.06 GB, other allocations: 1.32 GB, max allowed: 18.13 GB). Tried to allocate 785.27 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
 
 Memory Overflow Issue Summary
 Problem:
