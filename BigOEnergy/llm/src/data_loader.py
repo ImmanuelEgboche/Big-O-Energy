@@ -1,5 +1,5 @@
 import torch
-from torch.utils.data import Dataset, Dataloader
+from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
 import os
 
@@ -10,7 +10,7 @@ class ACDataset(Dataset):
         self.max_length = max_length
 
         # Load conversations from file
-        print("Loading convos from {fie_path}.")
+        print(f"Loading convos from {file_path}.")
         with open(file_path, 'r', encoding='utf-8') as f:
             content =f.read().strip()
             # Split on double new lines as each convo is seperated by \n\n
@@ -49,7 +49,7 @@ class ACDataset(Dataset):
             'attention_mask': attention_mask,
             'labels': labels 
         }
-    def create_data_loaders(data_dir="data/processed", model_name="gpt2", batch_size=4, max_length=512):
+def create_data_loaders(data_dir="data/processed", model_name="gpt2", batch_size=4, max_length=512):
         """
         """
         print(f"Setting up tokenizer for {model_name}")
@@ -76,14 +76,14 @@ class ACDataset(Dataset):
         )
 
         # Create data laoders
-        train_loader = Dataloader(
+        train_loader = DataLoader(
             train_dataset,
             batch_size = batch_size,
             shuffle= True,
             num_workers = 0
         )
 
-        val_loader = Dataloader(
+        val_loader = DataLoader(
             val_dataset,
             batch_size = batch_size,
             shuffle=False,

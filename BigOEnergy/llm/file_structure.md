@@ -31,7 +31,13 @@ llm/
 │   ├── data_exploration.ipynb         # Show your data work
 │   ├── training_analysis.ipynb        # Training metrics
 │   └── demo.ipynb                     # Interactive showcase
-│
+│ 
+├── tests/
+├── __init__.py
+├── test_data_loader.py        # Proper TDD tests
+├── test_model.py             # Model tests
+└── fixtures/
+│     └── sample_conversations.txt  # Test data
 └── outputs/
     ├── logs/                          # Training logs
     ├── samples/                       # Generated examples

@@ -62,6 +62,68 @@ The project is a **work in progress** — I’m tracking versions as I test new 
 
 ### **v2.1.0 — Traingn my GTPT2s**  
 
+different gpus for different things in model.py
+
+```
+import torch
+
+# Better device detection for Apple Silicon
+if torch.backends.mps.is_available():
+    device = torch.device("mps")  # Use Apple Metal GPU
+elif torch.cuda.is_available():
+    device = torch.device("cuda")  # Use NVIDIA GPU (unlikely on Mac)
+else:
+    device = torch.device("cpu")   # Use CPU as fallback
+
+print(f"Using device: {device}")
+```
+
+mps for mac
+
+prcision setting 
+
+`torch_dtype=torch.float16 if device.type == "mps" else torch.float32`
+
+On MPS using float16 half the mem but faster computaion 
+
+But can be less precusine and potential for numerical instability 
+
+Where as float32 is more accurate and stable but using more mem and is slower
+
+
+apple gpus have limied VRAM compared to dedicated GPUS so flaot16 helps fit into larger models memeory
+
+
+
+Memory Overflow Issue Summary
+Problem:
+Your Mac Mini ran out of memory (18GB unified RAM exceeded) while training GPT-2 on your anime dataset, causing:
+
+Runtime crash with MPS out of memory error
+Loss became nan (not a number) indicating numerical instability
+
+Root Cause:
+
+Batch size of 4 with sequence length 512 was too memory-intensive
+GPT-2 (124M parameters) in float16 + activations + gradients exceeded available memory
+876 training conversations being processed in batches of 4
+
+Solution:
+Reduce memory footprint by:
+
+Lower batch size: 4 → 1
+Shorter sequences: 512 → 256 tokens
+Gradient accumulation: Accumulate gradients over 4 steps before updating weights (simulates batch_size=4 without the memory cost)
+Lower learning rate: 5e-5 → 3e-5 (helps with nan loss stability)
+
+Trade-offs:
+
+Training will be slower (4x more forward passes)
+Shorter sequences mean truncated conversations
+Still achieves similar results through gradient accumulation
+
+This is a common issue when training language models on consumer hardware with limited memory.
+
 - **Results:**  
 
 - **Takeaway:**  
