@@ -1,14 +1,25 @@
 # 🚀 LLM Design Experiments  
 
-This repo documents my ongoing experiments in designing and iterating on large language model (LLM) behavior.  
-The project is a **work in progress** — I’m tracking versions as I test new models, tweak generation settings, and learn about instruction vs. completion style LLMs.  
+Fine-tuning GTP2 to provide personalised anime recommendations through conversational AI
+
+---
+
+## Project Overview
+This portfilio demonstrates the complete ML pipeline for fine-tuning a language model on domain specific data. Starting from base
+GPT-2, I trained a specialised model on 1000+ anime recommendation conversations to create a AI that understands anime preferences
+and provides contextual suggestions. 
+
+**Tech Stack** Pytorch, Transformers (Hugging Fcae), Python 3.10
+**Hardware** Apple M2, 16GB (MPS Backend)
+**Training Date** 1000 curated anime Q&A paris (876 train / 110 val / 14 test )
 
 ---
 
 ## 📖 Progress Log  
 
 ### **v0.0.1 — First Steps with GPT-2**  
-- **Model:** `gpt2` (base)  
+- **Model:** `gpt2` (124M parameters)  
+- **Approach:** Zero shot prompting
 - **Issue:** Severe repetition and looping text.  
 - **Example:**  
   > Once upon a time, the world was a place of great beauty and great danger. The world was a place of great danger, and the world was a place of great danger...  
@@ -18,11 +29,12 @@ The project is a **work in progress** — I’m tracking versions as I test new 
 
 ---
 
-### **v0.1.0 — Tweaking Generation Settings**  
-- Adjusted **decoding settings**:  
-  - `temperature` (controls randomness)  
-  - `top_p` / `top_k` (controls diversity and reduces loops)  
-  - `repetition_penalty` (discourages echoes)  
+### **v0.1.0 — Generation parameter tuning**  
+- **Adjusted:**  
+  - `temperature=0.7` (reduced randomness)  
+  - `top_p=0.95` / `top_k=50` (controls diversity and reduces loops)  
+  - `repetition_penalty=1.2` (discourages echoes)
+  - `max_new_tokens=100` (shortter outputs)  
 - **Results:**  
   - Avoided infinite loops.  
   - More coherent samples, though still completive rather than conversational.  
@@ -33,9 +45,10 @@ The project is a **work in progress** — I’m tracking versions as I test new 
 ---
 
 ### **v1.0.0 — Upgrading to GPT-2 Medium**  
-- **Model:** `gpt2-medium`  
+- **Model:** `gpt2-medium` (355 parameters)  
 - **Results:**  
-  - More conversational than base GPT-2.  
+  - More conversational than base GPT-2.
+- **Issues:**  
   - But… issues with:  
     - Rambling / incoherent answers  
     - No clear Q&A structure  

@@ -6,6 +6,7 @@ from pathlib import Path
 import json
 from tqdm import tqdm
 import matplotlib.pyplot as plt
+import psutil
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -71,6 +72,14 @@ class AnimeTrainer:
         pbar = tqdm(self.train_loader, desc=f"Epoch {epoch+1}/{self.config.NUM_EPOCHS}")
 
         for batch_idx, batch in enumerate(pbar):
+            if batch_idx % 10 == 0:
+                mem = psutil.virtual_memory()
+                mem_percent = mem.percent
+
+                if mem_percent > 90:
+                    print(f"\n MEMORY AT {mem_percent}%")
+                    print("STOP TRAINING")
+                    
             input_ids = batch['input_ids'].to(self.device)
             attention_mask = batch['attention_mask'].to(self.device)
             labels = batch['labels'].to(self.device)

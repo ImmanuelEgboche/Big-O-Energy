@@ -3,11 +3,11 @@ from pathlib import Path
 class Config:
     # Model settings
     MODEL_NAME = "gpt2"
-    MAX_LENGTH = 512
+    MAX_LENGTH = 256
     
     # Training settings
-    BATCH_SIZE = 4
-    LEARNING_RATE = 5e-5
+    BATCH_SIZE = 2
+    LEARNING_RATE = 3e-5
     NUM_EPOCHS = 3
     WARMUP_STEPS = 100
     
